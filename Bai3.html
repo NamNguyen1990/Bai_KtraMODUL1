@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let a = prompt('Mời nhập chuỗi kỹ tự');
+    function dem() {
+        for (let i=0;i<a.length;i++) {
+            if (a[i]=== 'u' || a[i]=== 'e' || a[i]=== 'o' ||a[i]=== 'a' || a[i]=== 'i') {
+                count = count+1;
+            }
+        }
+        if (count === 0) {
+            alert('Không có ký tự nào')
+        }
+        else {
+            alert('Số ký tự là' + count)
+        }
+    }
+    dem()
+
+</script>
+</body>
+</html>
